@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="5" errors="3" failures="0" skip="0"><testcase classname="testDeleteIssue.DeleteIssue" name="test_delete_issue" time="1.825"></testcase><testcase classname="testDeleteIssue.DeleteIssue" name="test_delete_unexisting_issue" time="0.659"></testcase><testcase classname="test_Get_issue.BaseTest" name="test_get_issue" time="0.000"><error type="exceptions.AttributeError" message="'BaseTest' object has no attribute 'requests'"><![CDATA[Traceback (most recent call last):
+  File "/usr/local/Cellar/python/2.7.11/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/Users/nkbz/PycharmProjects/api_auto/test_Get_issue.py", line 12, in test_get_issue
+    response = self.requests.get(url, auth=self.creds)
+AttributeError: 'BaseTest' object has no attribute 'requests'
+]]></error></testcase><testcase classname="test_Get_issue.BaseTest" name="test_get_issue_inval_id" time="0.000"><error type="exceptions.AttributeError" message="'BaseTest' object has no attribute 'requests'"><![CDATA[Traceback (most recent call last):
+  File "/usr/local/Cellar/python/2.7.11/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/Users/nkbz/PycharmProjects/api_auto/test_Get_issue.py", line 20, in test_get_issue_inval_id
+    r = self.requests.get(url, auth=self.creds)
+AttributeError: 'BaseTest' object has no attribute 'requests'
+]]></error></testcase><testcase classname="test_create_issue.TestCreateIssue" name="test_create_issue" time="0.347"><error type="exceptions.AttributeError" message="'TestCreateIssue' object has no attribute 'requests'&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;requests.packages.urllib3.connectionpool: INFO: Starting new HTTPS connection (1): codespace-api.myjetbrains.com&#10;requests.packages.urllib3.connectionpool: DEBUG: &quot;POST /youtrack/rest/user/login HTTP/1.1&quot; 200 17&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------"><![CDATA[  File "/usr/local/Cellar/python/2.7.11/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/Users/nkbz/PycharmProjects/api_auto/test_create_issue.py", line 13, in test_create_issue
+    r = self.requests.put(url,data=params,cookies=self.cookies)
+'\'TestCreateIssue\' object has no attribute \'requests\'\n-------------------- >> begin captured logging << --------------------\nrequests.packages.urllib3.connectionpool: INFO: Starting new HTTPS connection (1): codespace-api.myjetbrains.com\nrequests.packages.urllib3.connectionpool: DEBUG: "POST /youtrack/rest/user/login HTTP/1.1" 200 17\n--------------------- >> end captured logging << ---------------------']]></error></testcase></testsuite>
